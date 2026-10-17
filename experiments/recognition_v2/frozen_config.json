@@ -1,0 +1,46 @@
+{
+  "weights": "balanced_training/best.pdparams",
+  "weights_sha256": "d1771fbc6a648636b0541225f9f7a92813e70c7f352496f773938ffa88472598",
+  "variants": [
+    {
+      "crop": 40,
+      "scale": 1.0,
+      "constrained": true,
+      "vertical_offset": -4
+    },
+    {
+      "crop": 40,
+      "scale": 1,
+      "constrained": true,
+      "beam_width": 8
+    }
+  ],
+  "selection": {
+    "method": "confidence",
+    "word_bonus": 0
+  },
+  "dev_correct": 575,
+  "dev_n": 600,
+  "dev_character_edits": 38,
+  "label_normalization": "lowercase, spaces significant",
+  "final_set_used_for_selection": false,
+  "insertion_rescue": {
+    "weights": "pretrained_dynamic.pdparams",
+    "weights_sha256": "3d25b99bef7ba60980b19136210e866da04fed835cbc9080a10c818ae1e477b2",
+    "threshold": 0,
+    "minimum_confidence": 0.6,
+    "design": "Known-original regression safeguard: require clipped ink, one insertion only, same word count and Cyrillic output",
+    "dev_eligible_rescues": 0,
+    "confidence_threshold": "Conservative design prior, not a fitted accuracy claim"
+  },
+  "frozen_at_utc": "2026-10-16T23:42:38.069030+00:00",
+  "round1_test_consumed_as_regression": true,
+  "round3_results_not_inspected": true,
+  "implementation_sha256": {
+    "recognition_model.py": "c5a2c7b7171b3024ce913fd0917a3db881a422b8191c7c1a3bf0f6125b081bb0",
+    "recognition_pipeline.py": "e0509686ff86543a6e612e7405f4d62376dcf27ca7f7ae7fbc2bc9127b5f14f7",
+    "recognition_transforms.py": "6801001a62efd9f067ef03915d46ff6e4b748f8a80bd323fba42e4d340f147f1",
+    "rectifier.py": "429d5e5f680306b6e6447c2dceddae400f08bd34358871396427cbdbbb89e4ce"
+  },
+  "fresh_manifest_sha256": "11edd13bbfa282348aa8d775a60e0100e2801dc317c5ff7d23b4440c6852329e"
+}

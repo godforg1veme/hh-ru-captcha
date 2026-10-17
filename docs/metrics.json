@@ -1,0 +1,105 @@
+{
+  "metrics": {
+    "final": {
+      "before": {
+        "n": 1000,
+        "correct": 732,
+        "accuracy": 0.732,
+        "without_spaces_correct": 782,
+        "cer": 0.028340356123419872,
+        "wilson_95_interval": [
+          0.7036980405782712,
+          0.7585262784776435
+        ]
+      },
+      "after": {
+        "n": 1000,
+        "correct": 952,
+        "accuracy": 0.952,
+        "without_spaces_correct": 952,
+        "cer": 0.00434959902134022,
+        "wilson_95_interval": [
+          0.9369335997915913,
+          0.9636068838863117
+        ]
+      },
+      "rectification_failures": 0
+    },
+    "final_stress": {
+      "before": {
+        "n": 500,
+        "correct": 206,
+        "accuracy": 0.412,
+        "without_spaces_correct": 239,
+        "cer": 0.07969267851762579,
+        "wilson_95_interval": [
+          0.3696877164049981,
+          0.4556542164564409
+        ]
+      },
+      "after": {
+        "n": 500,
+        "correct": 463,
+        "accuracy": 0.926,
+        "without_spaces_correct": 463,
+        "cer": 0.0076830370593552275,
+        "wilson_95_interval": [
+          0.8996646988891734,
+          0.945839126122497
+        ]
+      },
+      "rectification_failures": 0
+    },
+    "legacy_1000": {
+      "before": {
+        "n": 1000,
+        "correct": 853,
+        "accuracy": 0.853,
+        "without_spaces_correct": 902,
+        "cer": 0.017178304437728647,
+        "wilson_95_interval": [
+          0.8297018143400393,
+          0.873596395257969
+        ]
+      },
+      "after": {
+        "n": 1000,
+        "correct": 970,
+        "accuracy": 0.97,
+        "without_spaces_correct": 970,
+        "cer": 0.003419755050103388,
+        "wilson_95_interval": [
+          0.95749631851849,
+          0.978906396810303
+        ]
+      },
+      "rectification_failures": 0
+    },
+    "real_9": {
+      "before": {
+        "n": 9,
+        "correct": 8,
+        "accuracy": 0.8888888888888888,
+        "without_spaces_correct": 9,
+        "cer": 0.0078125,
+        "wilson_95_interval": [
+          0.5649937852319399,
+          0.9801096286728695
+        ]
+      },
+      "after": {
+        "n": 9,
+        "correct": 9,
+        "accuracy": 1.0,
+        "without_spaces_correct": 9,
+        "cer": 0.0,
+        "wilson_95_interval": [
+          0.7008472464490407,
+          1
+        ]
+      },
+      "rectification_failures": 0
+    }
+  },
+  "scope": "Historical evaluation; source data excluded from repository."
+}
