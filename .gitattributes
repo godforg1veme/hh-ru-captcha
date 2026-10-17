@@ -6,3 +6,8 @@
 *.txt text eol=lf
 # Preserve upstream formatting, including meaningful dictionary whitespace.
 PaddleOCR/** -whitespace
+# Frozen implementation hashes refer to the original byte representation.
+recognition_model.py -text
+recognition_pipeline.py -text
+recognition_transforms.py -text
+rectifier.py -text
